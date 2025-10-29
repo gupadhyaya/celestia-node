@@ -1,16 +1,17 @@
-////go:build integration
+//go:build integration
 
 package tastora
 
 import (
 	"context"
-	sdkmath "cosmossdk.io/math"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	"sync"
 	"sync/atomic"
 	"testing"
 	"time"
+
+	sdkmath "cosmossdk.io/math"
+	sdk "github.com/cosmos/cosmos-sdk/types"
+	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
